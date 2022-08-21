@@ -1,0 +1,36 @@
+<div class="bloque">
+    
+    <h2> <b>
+        Experiencia laboral</b>
+        <button type="button" class="btn btn-link">
+            <i class="fa-regular fa-pen-to-square"></i>
+        </button>
+    </h2>
+
+        <div class="contenido">
+            <div class="loguitos">
+                <div>
+                    <img src="../assets/imagenes/logobiolab.jpeg" class="lab" width="200px">
+                </div>
+                <div>
+                    <img src="../assets/imagenes/logoUnam.png" class="lab" width="200px">
+                </div>
+            </div>
+            
+            <div class="titulo">
+                <ul class="items-list"> 
+            
+                    <li *ngFor="let experiencia of miExperiencia">
+                        <h2> {{experiencia.nombre}}</h2> 
+                        <h3>{{experiencia.lugar}}</h3>
+                        <p style="padding-left: 10px"> <b> {{experiencia.anio}} </b></p>
+                        <p>{{experiencia.descripcion}}</p>
+                    </li>    
+                </ul>
+            </div>
+
+            
+
+    </div>
+   
+</div>

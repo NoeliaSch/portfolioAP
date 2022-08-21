@@ -1,0 +1,53 @@
+<header>
+    <nav class="navbar navbar-light bg-light">
+      <div class="container-fluid">
+      <div>
+        <a class="navbar-brand" target="_blank" href="https://www.argentina.gob.ar/produccion/transformacion-digital-y-economia-del-conocimiento/argentina-programa"> 
+          <img src="../assets/imagenes/logoAP.jpeg" width="30" height="30" class="d-inline-block align-top" alt="">
+          Argentina Programa - #YoProgramo> 
+        </a>
+      </div>
+      <div>
+        <a class="nav-link" href="https://www.linkedin.com/in/noelia-schroder" target="_blank">
+          <i class="fa-brands fa-linkedin" id="fa-linkedin"></i> 
+        </a>
+    </div>
+    <div>
+        <a class="nav-link" href="https://www.instagram.com/noeliamalena/" target="_blank"> 
+          <i class="fa-brands fa-instagram" id="fa-instagram"></i> 
+        </a>
+        </div>
+
+        <div>
+        <a class="nav-item"> 
+          <div ng-controller="myCtrl">
+          <button  type="button" class="btn btn-primary" id="login" [routerLink]="['/login']"> Login </button>
+         </div>
+        </a>
+      </div>
+      </div>
+    </nav>
+      
+  
+    <div class="encabezado">
+      <div class="banner" style="background-image:url('../assets/imagenes/bg_blue.jpeg')">
+         
+      
+      <div class="cuadro">
+        <h2 class="name">
+          <span *ngIf="miPortfolio">{{miPortfolio.nombre_completo}}</span> 
+        </h2>
+      
+        <h2 class="profesion">
+          <span *ngIf="miPortfolio">{{miPortfolio.profesion}}</span>
+          <button type="button" class="btn btn-link" [hidden]="!isLogged">
+           {{ <i class="fa-regular fa-pen-to-square"></i> }} <!--van las llaves? mejor hidden?-->
+          </button>
+        </h2>
+      </div>
+    </div>
+  </div>
+    
+  
+    
+  </header>

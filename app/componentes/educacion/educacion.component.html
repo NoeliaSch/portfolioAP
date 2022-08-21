@@ -1,0 +1,37 @@
+<div class="bloque">
+
+    <h2><b>Educación</b> 
+        <button type="button" class="btn btn-link">
+            <i class="fa-regular fa-pen-to-square"></i>
+        </button>
+    </h2>
+
+<div class="contenido">
+
+    <div class="loguitos2">
+        <div>
+            <img src="../assets/imagenes/logoUnam.png"  width="150px">
+        </div>
+        <div>
+            <img src="../assets/imagenes/logoUnam.png"  width="150px">
+        </div>
+        <div>
+            <img src="../assets/imagenes/logoAP.jpeg" class="lab" width="150px">
+        </div> 
+    </div>
+    
+    <div class="titulo"> 
+        <ul *ngFor="let educacion of miEducacion" class="items-list"> <!--ver como invertir lista-->
+           <li >
+               <h2>{{educacion.carrera}}</h2>
+               <h3>{{educacion.institucion}}</h3>
+                <p>{{educacion.anio}}</p>
+            </li>
+        </ul> 
+    </div>
+    
+    
+</div>
+</div>
+    
+
